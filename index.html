@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>custom-video-player</title>
+</head>
+
+<body>
+  <main class="main">
+
+  <section class="video video-section" id="video">
+  <div class="container video-container">
+    <div class="video__movie">
+      <div class="video-wrap">
+        <div class="video__slider slides">
+          <div class="slide">
+            <video class="video__play video0" width="1050" height="700" loop poster="assets/img/musbox.jpeg">
+              <source src="assets/video2/MusicBox.mp4" type="video/mp4">
+            </video> 
+          </div>
+          <div class="slide">
+            <video class="video1" width="1050" height="700" loop poster="assets/img/mountriver.jpg">
+              <source src="assets/video2/MountRiver.mp4" type="video/mp4">
+            </video> 
+          </div>
+          <div class="slide">
+            <video class="video2" width="1050" height="700" loop poster="assets/img/otdyh-na-oke.jpg">
+              <source src="assets/video2/evening.mp4" type="video/mp4">
+            </video> 
+          </div>
+          <div class="slide">
+            <video class="video3" width="1050" height="700" loop poster="assets/img/singing-cap.jpg">
+              <source src="assets/video2/SingingBowl.mp4" type="video/mp4">
+            </video> 
+          </div>
+           
+          <a id="prev" class="control prev"></a>
+          <a id="next" class="control next"></a>
+        </div><!--/video__slider-->
+        <button class="video-around video__in">
+          <picture><source srcset="assets/svg/VideoAround.svg" type="image/webp"><img src="assets/svg/VideoAround.svg" alt="#"></picture>
+        </button>
+        <button class="video-go video__in">
+          <picture><source srcset="assets/svg/VideoGo.svg" type="image/webp"><img src="assets/svg/VideoGo.svg" alt="#"></picture>
+        </button>
+      </div>
+
+      <div class="video__control">
+
+        <div class="block block1">        
+          <button class="start"><picture><source srcset="assets/img/start.png" type="image/webp"><img src="assets/img/start.png" alt="#" width="40"></picture></button>
+          <button class="go"><picture><source srcset="assets/img/Go_pause.png" type="image/webp"><img src="assets/img/Go_pause.png" alt="#" width="100"></picture></button>
+          <button class="finish"><picture><source srcset="assets/img/finish.png" type="image/webp"><img src="assets/img/finish.png" alt="#" width="40"></picture></button>
+        </div>
+
+        <input class="video-progress" type="range" value="0" min="0" max="100" step="1">
+
+        <button class="back btn-shift"><< 5s</button>
+        <button class="forward btn-shift">>> 10s</button>
+
+        <button class="block block2">
+            <div class="audio_wrap">
+            <picture class="audio" ><source srcset="assets/img/audio.png" type="image/webp"><img src="assets/img/audio.png" alt="#" width="100"></picture>
+          </div>
+        </button>
+
+        <input class="audio-progress" type="range" value="40" min="0" max="100" step="1">
+        
+        <button class="block block3">
+          <div class="full_wrap">
+            <picture class="full"><source srcset="assets/img/full.png" type="image/webp"><img src="assets/img/full.png" alt="#"></picture>
+          </div>
+        </button>
+
+        <div class="speed_wrap">
+          <input class="speed" type="range" value="50" min="0" max="100" step="1">
+        </div>
+
+      </div> <!--/video__control-->
+    </div> <!--/video__movie-->
+  </div>
+  <!--/container-->
+</section>
+
+</main>
+   
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
+
